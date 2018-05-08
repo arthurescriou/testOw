@@ -22,10 +22,17 @@ try {
   //=> ArgumentError: Expected string to have a minimum length of `5`, got `yo`
 }
 
-try{
-	ow('fooo', ow.any(ow.string.maxLength(3), ow.number));
-}catch (error) {
+try {
+  ow('fooo', ow.any(ow.string.maxLength(3), ow.number));
+} catch (error) {
   console.log(error.message)
 }
 
 ow(3, ow.number)
+
+try {
+  const checkPassword = ow.create(ow.string.minLength(6));
+	checkPassword('foo');
+} catch (error) {
+	console.log(error.message)
+}
