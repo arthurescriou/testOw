@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules; node dist/main.js"
+  },
+  "dependencies": {
+    "@types/node": "^10.0.4",
+    "ow": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "buble": "^0.15.1",
+    "buble-loader": "^0.4.0",
+    "cross-env": "^5.0.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.7.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
